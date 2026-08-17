@@ -22,7 +22,7 @@ public class PickupItem : MonoBehaviour, IPickup
     public void Pickup(Transform newParent)
     {
         rb.isKinematic = true;
-        rb.velocity = Vector3.zero;
+        rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
         transform.SetParent(newParent);
